@@ -1,0 +1,20 @@
+@use "../../../../assets/scss/variables/variables" as var;
+
+.icon-button {
+  width: 34px;
+  height: 34px;
+  padding: 5px;
+  border: 1px solid var.$clr-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var.$clr-primary;
+
+    svg path {
+      fill: var.$clr-white;
+    }
+  }
+}

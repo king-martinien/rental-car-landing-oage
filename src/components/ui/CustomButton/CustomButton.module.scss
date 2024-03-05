@@ -1,0 +1,14 @@
+@use "../../../assets/scss/variables/_variables.scss" as var;
+
+.customButton {
+  background-color: var.$clr-primary;
+  color: var.$clr-white;
+  padding-inline: 1.5rem;
+
+
+  &.outlined {
+    background-color: transparent;
+    border: 2px solid var.$clr-primary;
+    color: var.$clr-primary;
+  }
+}

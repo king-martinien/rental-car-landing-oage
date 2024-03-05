@@ -1,0 +1,21 @@
+@use "../../../assets/scss/variables/variables" as var;
+
+.sectionHeading {
+  text-align: center;
+
+  .subTitle {
+    color: var.$clr-primary-light;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+  }
+
+  .title {
+    margin-bottom: 1rem;
+    color: var.$clr-neutral-7;
+    font-size: 32px;
+  }
+
+  .description {
+    line-height: 1.4;
+  }
+}

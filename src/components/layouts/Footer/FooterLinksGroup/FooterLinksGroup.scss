@@ -1,0 +1,11 @@
+@use "../../../../assets/scss/variables/variables" as var;
+
+.footer-link-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: var.$clr-neutral-7;
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}

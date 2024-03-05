@@ -1,0 +1,50 @@
+@use "../variables/variables" as var;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  font-family: var.$font;
+}
+
+*::selection {
+  background-color: var.$clr-primary;
+  color: var.$clr-white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  min-height: 100vh;
+  color: var.$clr-neutral-5;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  background-color: transparent;
+  font-weight: bold;
+  height: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: none;
+  height: 50px;
+  padding-inline: 1rem;
+  font-size: 16px;
+}

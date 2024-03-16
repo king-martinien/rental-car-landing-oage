@@ -1,7 +1,7 @@
-import './FooterLink.scss';
+import styles from './FooterLink.module.scss';
 
 export const FooterLink = ({link, children}) => {
     return (
-        <li><a className={"footer-link"} href={link}>{children}</a></li>
+        <li className={styles.footerLinkItem}><a className={styles.footerLink} href={link}>{children}</a></li>
     )
 };

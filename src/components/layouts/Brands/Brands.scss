@@ -1,0 +1,13 @@
+@use "../../../assets/scss/variables/variables.scss" as var;
+
+.brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 1rem;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,46 @@
+@use "../../../assets/scss/variables/variables" as var;
+
+.header {
+  padding: 2.5rem 0;
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: none;
+
+    .navMenu {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      .navMenuItem {
+        display: flex;
+
+        a {
+          color: var.$clr-neutral-9;
+          font-weight: 600;
+          transition: all .3s ease;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .nav {
+      display: block;
+
+      .navMenu {
+        .navMenuItem {
+          a:hover {
+            color: var.$clr-primary;
+          }
+        }
+      }
+    }
+  }
+
+}

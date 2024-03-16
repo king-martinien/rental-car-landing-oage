@@ -1,0 +1,8 @@
+.services-group {
+  display: grid;
+  gap: 2rem;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

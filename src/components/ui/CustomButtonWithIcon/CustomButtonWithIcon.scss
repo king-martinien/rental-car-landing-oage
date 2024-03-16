@@ -1,0 +1,23 @@
+@use '../../../assets/scss/variables/variables' as var;
+
+.custom-button-with-icon {
+  //border: 2px solid var.$clr-neutral-7;
+  //color: var.$clr-neutral-7;
+  background-color: var.$clr-primary;
+  color: var.$clr-white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .icon {
+    position: absolute;
+    display: inline-flex;
+    left: 1rem;
+
+    svg path {
+      fill: var.$clr-white;
+    }
+  }
+}

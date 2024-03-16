@@ -1,0 +1,40 @@
+@use '../../../../assets/scss/variables/variables' as var;
+
+.service {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-inline: 2rem;
+  position: relative;
+  color: var.$clr-white;
+  background-blend-mode: multiply;
+  background-color: var.$clr-primary-light;
+  transition: all .3s ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    bottom: 0;
+    inset-inline: 0;
+    background-color: var.$clr-primary;
+    transition: all .3s ease;
+  }
+
+  &-img {
+    height: 90px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:hover {
+      background-color: var.$clr-primary;
+
+      &::after {
+        height: 10px;
+      }
+    }
+  }
+}

@@ -1,9 +1,9 @@
 @use "../../../../../assets/scss/variables/variables" as var;
 
-li {
+.footerLinkItem {
   margin-bottom: .7rem;
 
-  .footer-link {
+  .footerLink {
     color: var.$clr-neutral-5;
     display: inline-block;
     font-size: 17px;

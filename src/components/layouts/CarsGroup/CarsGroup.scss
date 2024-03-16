@@ -1,0 +1,9 @@
+.cars {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
